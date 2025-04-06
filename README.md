@@ -36,7 +36,7 @@ FOR SCRATCH:
 FOR TURBOWARP:
 ## Loading in TurboWarp:
 
-1. Save the code as `display-info-pro.js`
+1. Same as 1.) in the Scratch Method.
 2. In TurboWarp:
    - Click "Extensions" in the toolbar
    - Select "Load Extension"
