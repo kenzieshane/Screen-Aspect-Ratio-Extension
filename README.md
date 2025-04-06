@@ -17,3 +17,27 @@ FOR SCRATCH:
 - Multi-monitor features require Chrome/Edge 98+ or Firefox 103+
 - The browser may prompt for permission to access screen details
 - On older browsers, it will gracefully fall back to primary display only
+
+FOR TURBOWARP:
+## Loading in TurboWarp:
+
+1. Save the code as `display-info-pro.js`
+2. In TurboWarp:
+   - Click "Extensions" in the toolbar
+   - Select "Load Extension"
+   - Choose "JavaScript File"
+   - Upload your file
+
+## Limitations to Note:
+
+1. **Multi-monitor support** requires:
+   - Chrome/Edge 98+ or Firefox 103+
+   - User permission (TurboWarp will prompt)
+   - HTTPS connection (except localhost)
+
+2. **Mobile devices** may report unexpected ratios due to:
+   - Browser chrome (address bars)
+   - Viewport scaling
+   - Device-specific pixel ratios
+
+3. **TurboWarp Packager** may require additional permissions for the packaged app to access screen details
