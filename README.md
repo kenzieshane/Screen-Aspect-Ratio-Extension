@@ -7,6 +7,21 @@ Best part: no need to install other extension anymore after installing this (for
 
 What makes this extension better than other extensions? Good question. Please leave :D
 
+## Notes regarding versions
+- SECURE version means it uses window.screen function to get the data.
+- EASY version means it uses window.inner function to get the data.
+
+## Which should i pick? 
+Well, for starter you may want to see this table. And decide for yourself as I am too lazy to type an explanation.
+
+| Feature              | `window.screen` | `window.inner` |
+|----------------------|-----------------|----------------|
+| Needs permissions    | Yes (multi-monitor) | No           |
+| Measures physical display | Yes       | No           |
+| Affected by zoom     | No              | Yes           |
+| Changes on resize    | No              | Yes           |
+| Includes browser UI  | N/A             | No            |
+
 FOR SCRATCH:
 ## How to Load:
 1. Download the .js file that suits your needs. (available at the release page)
