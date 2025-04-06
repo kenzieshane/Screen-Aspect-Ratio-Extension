@@ -1,4 +1,4 @@
-// (C) Kenzie Shane Setiawan 2025
+// Kenzie Shane Setiawan 2025
 
 (function(ext) {
     // Cleanup function when extension is unloaded
