@@ -1,4 +1,4 @@
-y# Screen-Aspect-Ratio-Extension
+# Screen-Aspect-Ratio-Extension
 A scratch/turbowarp extension for detecting client's device screen aspect ratio.
 
 Also contains a detector for screen orientation. Very useful for adapting your project's layout to several device if you haven't before. If you don't want to do it the proper way. Also great for debugging purposes.
