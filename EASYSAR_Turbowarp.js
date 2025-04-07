@@ -49,10 +49,16 @@ class WindowRatioExtension {
       '3:2': 1.5,
       '5:4': 1.25,
       '4:3': 1.33,
-      '1:1': 1
+      '1:1': 1,
+      '9:32': 0.28,
+      '9:21': 0.42,
+      '9:16': 0.56,
+      '10:16': 0.625,
+      '2:3': 0.67,
+      '4:5': 0.8
     };
     
-    let closest = '16:9';
+    let closest = ratio >= 1 ? '16:9' : '9:16';
     let smallestDiff = Infinity;
     
     for (const [name, value] of Object.entries(ratios)) {

@@ -18,7 +18,13 @@
         '3:2': 1.5,     // Surface/Chromebook
         '5:4': 1.25,    // Business monitors
         '4:3': 1.33,    // Standard
-        '1:1': 1        // Square
+        '1:1': 1,       // Square
+        '9:32': 0.28,   // Portrait super ultrawide
+        '9:21': 0.42,   // Portrait ultrawide
+        '9:16': 0.56,   // Portrait widescreen
+        '10:16': 0.625, // Portrait widescreen laptop
+        '2:3': 0.67,    // Portrait Surface/Chromebook
+        '4:5': 0.8      // Portrait business monitors
     };
 
     // Main ratio detection function
@@ -57,7 +63,7 @@
 
     // Helper function to find closest ratio
     function findClosestRatio(ratio) {
-        let closest = '16:9';
+        let closest = ratio >= 1 ? '16:9' : '9:16';
         let smallestDiff = Infinity;
         
         for (const [name, value] of Object.entries(Ratios)) {
@@ -71,6 +77,9 @@
         // Special cases
         if (Math.abs(ratio - 1.33) < 0.03 && Math.abs(ratio - 1.25) < 0.03) {
             return ratio > 1.29 ? '4:3' : '5:4';
+        }
+        if (Math.abs(ratio - 0.75) < 0.03 && Math.abs(ratio - 0.8) < 0.03) {
+            return ratio > 0.77 ? '3:4' : '5:8';
         }
         
         return closest;
